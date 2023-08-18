@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>How to include CSS to a page?</title>
+</head>
+<body>
+<header>
+  <h1>3D&T RPG Character Creation</h1>
+</header>
+
+<form>
+  <fieldset>
+    <legend>Personal data</legend>
+
+    <label for="characterName">Character Name:</label>
+    <input type="text" id="characterName" name="characterName" required><br><br>
+
+    <label for="characterDescription">Character Description:</label><br>
+    <textarea id="characterDescription" name="characterDescription" rows="4" cols="50"></textarea><br><br>
+  </fieldset>
+
+  <fieldset>
+    <legend>Specialization</legend>
+
+    <label for="characterClass">Character Class:</label>
+    <select id="characterClass" name="characterClass" required>
+      <option value="warrior">Warrior</option>
+      <option value="mage">Mage</option>
+      <option value="rogue">Rogue</option>
+      <option value="cleric">Cleric</option>
+    </select><br><br>
+
+    <label for="characterRace">Character Race:</label>
+    <select id="characterRace" name="characterRace" required>
+      <option value="human">Human</option>
+      <option value="elf">Elf</option>
+      <option value="dwarf">Dwarf</option>
+      <option value="orc">Orc</option>
+    </select><br><br>
+  </fieldset>
+
+  <fieldset>
+    <legend>Attributes</legend>
+
+    <label for="strength">Strength:</label>
+    <input type="number" id="strength" name="strength" min="1" max="10" required><br><br>
+
+    <label for="agility">Agility:</label>
+    <input type="number" id="agility" name="agility" min="1" max="10" required><br><br>
+
+    <label for="intelligence">Intelligence:</label>
+    <input type="number" id="intelligence" name="intelligence" min="1" max="10" required><br><br>
+
+    <label for="constitution">Constitution:</label>
+    <input type="number" id="constitution" name="constitution" min="1" max="10" required><br><br>
+
+    <label for="dexterity">Dexterity:</label>
+    <input type="number" id="dexterity" name="dexterity" min="1" max="10" required><br><br>
+
+    <label for="charisma">Charisma:</label>
+    <input type="number" id="charisma" name="charisma" min="1" max="10" required><br><br>
+
+    <label for="luck">Luck:</label>
+    <input type="number" id="luck" name="luck" min="1" max="10" required><br><br>
+  </fieldset>
+
+  <fieldset>
+    <legend>Actions</legend>
+    <button type="submit">Create Character</button>
+  </fieldset>
+</form>
+</body>
+</html>
