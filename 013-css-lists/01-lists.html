@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <title>HTML 5 template</title>
+</head>
+<body>
+<header>
+  <nav>
+    <ul>
+      <li><a href="#characterInfo">Character Info</a></li>
+      <li><a href="#attributes">Attributes</a></li>
+      <li><a href="#description">Description</a></li>
+    </ul>
+  </nav>
+
+  <h1>3D&T Character Registration</h1>
+</header>
+
+<section id="characterInfo">
+  <h2>Character Information</h2>
+  <form>
+    <label for="characterName">Character Name:</label>
+    <input type="text" id="characterName" name="characterName" required><br><br>
+
+    <label for="characterClass">Character Class:</label>
+    <select id="characterClass" name="characterClass" required>
+      <option value="warrior">Warrior</option>
+      <option value="mage">Mage</option>
+      <option value="rogue">Rogue</option>
+      <option value="cleric">Cleric</option>
+    </select><br><br>
+
+    <!-- More character information fields... -->
+  </form>
+</section>
+
+<section id="attributes">
+  <h2>Attributes</h2>
+  <form>
+    <fieldset>
+      <legend>Primary Attributes</legend>
+      <label for="strength">Strength:</label>
+      <input type="number" id="strength" name="strength" min="1" max="10" required><br><br>
+
+      <label for="agility">Agility:</label>
+      <input type="number" id="agility" name="agility" min="1" max="10" required><br><br>
+
+      <!-- More primary attributes... -->
+    </fieldset>
+
+    <!-- More attribute sections... -->
+  </form>
+</section>
+
+<section id="description">
+  <h2>Character Description</h2>
+  <article>
+    <h3>Appearance</h3>
+    <p>Describe how your character looks...</p>
+  </article>
+
+  <aside>
+    <h3>Additional Information</h3>
+    <p>Provide any extra details about your character...</p>
+  </aside>
+</section>
+
+<footer>
+  <button type="submit">Register Character</button>
+</footer>
+</body>
+</html>
